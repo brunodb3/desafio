@@ -1,0 +1,14 @@
+// theme.scss
+//  - theming sass declarations for angular material
+// -------------------------------------------------------------------------------------------------
+
+// importing custom variables
+@import 'styles-variables';
+
+// mat-palette accepts $palette-name, main, lighter and darker variants
+$clp-accent: mat-palette($mat-light-blue);
+$clp-warn: mat-palette($mat-deep-orange, A200);
+$clp-primary: mat-palette($mat-indigo, 500, 700, 900);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$clp: mat-light-theme($clp-primary, $clp-accent, $clp-warn);

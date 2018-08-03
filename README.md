@@ -1,31 +1,71 @@
-## Desafio front-end
+# desafio-clipping
 
-Este desafio é parte do processo seletivo para o cargo de Desenvolvedor Front-end no Clipping, cuja vaga está descrita [neste link](http://ajuda.clippingcacd.com.br/vagas/oportunidade-para-desenvolvedor-no-clipping).
+por [@brunodb3](https://github.com/brunodb3)
 
-O teste é focado em design de código e conhecimento de orientação a objetos. O objetivo é avaliar sua experiência em escrever um código de fácil manutenção, baixo acoplamento e alta coesão.
+Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 6.1.2, tomando como base o projeto [codevelopers-website](https://github.com/grupo-codevelopers/codevelopers-website).
 
+Consiste na resolução do [desafio apresentado pela empresa Clipping CACD](https://github.com/clippingcacd/desafio), para o processo seletivo de desenvolvedores front-end.
 
-### Apresentação do problema
+## Instalação/Primeiros passos
 
-O arquivo `index.html` contém o esqueleto de uma aplicação de chat totalmente *bare-bones*: uma `<ul>` com uma lista de mensagens enviadas, e um `<button>` + `<input>` para envio de novas mensagens.
+Antes de clonar o repositório, tenha certeza de ter [NodeJS >= v6](https://nodejs.org/en/) - (eu utilizo a versão 10.6.0) e [Angular CLI](https://cli.angular.io/) instalados e configurados.
 
-A feature inicial de nossa aplicação é bastante simples: o usuário deve poder 
-entrar uma mensagem na caixa de texto e, ao apertar o botão "Enviar" (ou 
-pressionar <kbd>Enter</kbd>), a mensagem deverá aparecer na lista de mensagens.
+Instale as dependências e execute `ng serve` ou `npm start` para abrir um servidor local.
 
-Isoladamente, essa é uma feature simples de implementar, mas queremos que você 
-leve em conta a evolução futura do software. Imagine que o app irá crescer em 
-features, e adicionar coisas como:
-* envio de mensagens via ajax, com as respostas vindo via `long-polling`
-* chat em realtime via WebRTC ou Firebase
+```sh
+npm install # instala os módulos do package.json, usando npm
+ng serve # abre o servidor livereload local (padrão localhost:4200)
+# ou
+npm start # também abre o servidor local, vide package.json
+```
 
-**Você deve pensar num design de código que suporte esses casos de uso sem grandes modificações.**
+## Executando a build
 
-IMPORTANTE: Não é necessário integrar o código ao backend! O software deve ser estruturado de forma que seja fácil integrar com diferentes estratégias de backend, mas, neste desafio, **o backend não precisa ser implementado**.
+[O comando build do Angular CLI](https://github.com/angular/angular-cli/wiki/build) compila a aplicação em um diretório (padrão é `/dist`), para facilitar o deploy em um servidor remoto.
 
-### Avaliação
+Execute o processo de build, passando a flag `--env=ENVIRONMENT` de maneira opcional, para alterar o arquivo de ambiente a ser utilizado.
 
-Para nos enviar seu código, você pode fazer um fork desse repositório e nos mandar um pull-request.
+```sh
+# esses comandos são equivalentes
+ng build --target=production --environment=prod
+ng build --prod --env=prod
+ng build --prod
+# esses também são
+ng build --target=development --environment=dev
+ng build --dev --e=dev
+ng build --dev
+ng build
+```
 
-### Créditos
-Adaptado de https://github.com/Creditas/challenge
+_Você pode usar a compilação [ahead-of-time](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html), ao passar a flag `--aot`_
+
+### Observação
+
+Este projeto foi construído utilizando [lazy loading](https://angular.io/guide/lazy-loading-ngmodules) em seus módulos, para otimizar uso de banda em ambiente de produção.
+
+---
+
+Você pode ter diferentes ambientes para sua aplicação, utilizando a pasta `/environments`. [Este artigo](https://medium.com/beautiful-angular/angular-2-and-environment-variables-59c57ba643be) vai te dar mais informações sobre ambientes.
+
+## Code scaffolding
+
+Execute `ng generate component component-name` para gerar um novo componente. Você também pode usar
+`ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Executando testes unitários
+
+Execute `ng test` para rodar testes unitários através do [Karma](https://karma-runner.github.io).
+
+## Executando testes end-to-end (ponta-a-ponta)
+
+Execute `ng e2e` para rodar testes end-to-end através do [Protractor](http://www.protractortest.org/).
+
+## Mais informações
+
+Para encontrar mais informações sobre Angular CLI, execute `ng help` ou entre no [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Controle de versões utilizando Git
+
+Para padronização do controle de versões, este projeto utiliza [Standard Version](https://github.com/conventional-changelog/standard-version) e [Commitizen](https://github.com/commitizen/cz-cli), para facilitar comandos como `commit`, `push` e atualizaro `CHANGELOG.md` para todos os desenvolvedores.
+
+**Bruno Duarte Brito - 2018**

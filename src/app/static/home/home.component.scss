@@ -1,0 +1,45 @@
+// home.component.scss
+//  - home component sass declarations
+// -------------------------------------------------------------------------------------------------
+
+// importing custom variables
+@import '../../../styles-variables';
+
+form {
+  margin-top: 50px;
+  display: inline-block;
+}
+
+#banner {
+  padding: 16px;
+  min-height: 200px;
+  text-align: center;
+  background-color: $primary;
+
+  h1,
+  h2 {
+    color: $white;
+  }
+}
+
+#message-form {
+  width: 100%;
+  min-width: 150px;
+  max-width: 500px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+h1 {
+  margin: 5px;
+  font-size: 36pt;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 5px;
+  font-size: 18pt;
+  font-weight: 200;
+}
