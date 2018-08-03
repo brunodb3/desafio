@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "desafio-clipping",
   "author": "Bruno Duarte Brito <brunodb3@gmail.com>",
   "scripts": {
@@ -9,8 +9,8 @@
     "e2e": "ng e2e",
     "test": "ng test",
     "lint": "ng lint",
-    "local": "ng serve",
     "start": "npm run local",
+    "local": "ng serve --open",
     "release": "standard-version",
     "build": "ng build --prod --build-optimizer",
     "push:github": "git push --follow-tags origin master",
