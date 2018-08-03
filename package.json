@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "name": "desafio-clipping",
   "author": "Bruno Duarte Brito <brunodb3@gmail.com>",
   "scripts": {
