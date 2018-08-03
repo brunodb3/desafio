@@ -8,8 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // importing custom modules
 import { CoreModule } from '@app/core';
+import { ChatModule } from '@app/chat';
 import { SharedModule } from '@app/shared';
-import { StaticModule } from '@app/static';
 // import { environment } from '@env/environment';
 
 // importing main app's files
@@ -28,8 +28,8 @@ import { AppComponent } from '@app/app.component';
 
     // custom modules
     CoreModule,
+    ChatModule,
     SharedModule,
-    StaticModule,
 
     // routing module
     AppRouting

@@ -1,0 +1,49 @@
+<article id="banner">
+
+  <h1>
+    Desafio Clipping
+  </h1>
+
+  <h2>
+    por Bruno Duarte Brito
+  </h2>
+
+</article>
+
+<div class="center">
+  <mat-card class="full-width">
+    <mat-card-content>
+      <mat-list class="full-width" #messageList>
+
+        <h3 mat-subheader>
+          Mensagens enviadas
+        </h3>
+
+        <mat-list-item *ngFor="let message of messages">
+          <mat-icon mat-list-icon>message</mat-icon>
+
+          <h4 mat-line>{{ message.value }}</h4>
+          <p mat-line>{{ message.sentDate | date:'MMM d, y, h:mm:ss a' }}</p>
+          <mat-divider></mat-divider>
+        </mat-list-item>
+
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="center">
+  <form id="message-form" class="full-width" [formGroup]="messageForm">
+
+    <mat-form-field class="full-width">
+      <input matInput #message minLength="4" maxlength="256" placeholder="Mensagem" formControlName="message">
+      <mat-hint align="start">
+        <strong>Digite aqui sua mensagem</strong>
+      </mat-hint>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="submitMessage(message.value)" [disabled]="!messageForm.valid">Enviar</button>
+
+  </form>
+</div>

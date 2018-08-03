@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 // angular material (https://material.angular.io)
+import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -25,6 +26,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ReactiveFormsModule,
 
     // 3rd party libraries
+    MatListModule,
     MatIconModule,
     MatCardModule,
     MatInputModule,
@@ -43,6 +45,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ReactiveFormsModule,
 
     // 3rd party libraries
+    MatListModule,
     MatIconModule,
     MatCardModule,
     MatInputModule,

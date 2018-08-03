@@ -1,5 +1,5 @@
-// static.routing.ts
-//  - static module routing declaration
+// chat.routing.ts
+//  - chat module routing declaration
 // -------------------------------------------------------------------------------------------------
 
 // importing 3rd party libraries
@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // importing custom components
-import { HomeComponent } from '@app/static/home/home.component';
+import { HomeComponent } from '@app/chat/home/home.component';
 
 // creating the routes
 const routes: Routes = [
@@ -22,4 +22,4 @@ const routes: Routes = [
   exports: [RouterModule],
   imports: [RouterModule.forChild(routes)]
 })
-export class StaticRouting {}
+export class ChatRouting {}

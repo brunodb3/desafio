@@ -2,6 +2,8 @@
 
 por [@brunodb3](https://github.com/brunodb3)
 
+[![Desafio_Clipping_-_Bruno_Duarte_Brito.png](https://s8.postimg.cc/woixxsxo5/Desafio_Clipping_-_Bruno_Duarte_Brito.png)](https://postimg.cc/image/6sz7elvu9/)
+
 Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 6.1.2, tomando como base o projeto [codevelopers-website](https://github.com/grupo-codevelopers/codevelopers-website).
 
 Consiste na resolução do [desafio apresentado pela empresa Clipping CACD](https://github.com/clippingcacd/desafio), para o processo seletivo de desenvolvedores front-end.
@@ -66,6 +68,6 @@ Para encontrar mais informações sobre Angular CLI, execute `ng help` ou entre 
 
 ## Controle de versões utilizando Git
 
-Para padronização do controle de versões, este projeto utiliza [Standard Version](https://github.com/conventional-changelog/standard-version) e [Commitizen](https://github.com/commitizen/cz-cli), para facilitar comandos como `commit`, `push` e atualizaro `CHANGELOG.md` para todos os desenvolvedores.
+Para padronização do controle de versões, este projeto utiliza [Standard Version](https://github.com/conventional-changelog/standard-version) e [Commitizen](https://github.com/commitizen/cz-cli), para facilitar comandos como `commit`, `push` e atualizar o `CHANGELOG.md` para todos os desenvolvedores.
 
 **Bruno Duarte Brito - 2018**

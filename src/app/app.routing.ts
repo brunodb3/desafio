@@ -10,7 +10,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: '@app/static/static.module#StaticModule'
+    loadChildren: '@app/chat/chat.module#ChatModule'
   },
   {
     path: '**',
