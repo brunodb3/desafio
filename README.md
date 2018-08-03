@@ -49,6 +49,10 @@ Este projeto foi construído utilizando [lazy loading](https://angular.io/guide/
 
 Você pode ter diferentes ambientes para sua aplicação, utilizando a pasta `/environments`. [Este artigo](https://medium.com/beautiful-angular/angular-2-and-environment-variables-59c57ba643be) vai te dar mais informações sobre ambientes.
 
+## Demo
+
+Uma demonstração deste código pode ser encontrada [aqui](https://desafio-clipping-bruno-brito.firebaseapp.com/). Foi utilizada a hospedagem do Firebase.
+
 ## Code scaffolding
 
 Execute `ng generate component component-name` para gerar um novo componente. Você também pode usar
